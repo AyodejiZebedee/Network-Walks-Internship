@@ -1,0 +1,231 @@
+# PROJECT REPORT
+# Installation and Configuration of Kali Linux on Oracle VirtualBox Using a Pre-built OVA Image
+
+## 1. Introduction
+
+Virtualization is an important technology in cybersecurity because it allows users to run multiple operating systems on a single physical computer without interfering with the host operating system.
+
+As part of my cybersecurity internship with Network Walks, I carried out a practical project involving the deployment of Kali Linux on Oracle VirtualBox.
+
+Kali Linux is a Debian-based Linux distribution designed for penetration testing, digital forensics and information security auditing.
+
+This project focused on setting up a virtual environment using a pre-built Kali Linux VirtualBox image in OVA format.
+
+## 2. Project Objectives
+
+The objectives of this project were to:
+
+1. Install Oracle VirtualBox on a Windows computer.
+2. Download the pre-built Kali Linux VirtualBox image.
+3. Import the OVA appliance into VirtualBox.
+4. Configure the virtual machine hardware resources.
+5. Start and access the Kali Linux operating system.
+6. Verify that the virtual machine was functioning correctly.
+
+## 3. Hardware and Software Requirements
+
+### Hardware Requirements
+
+- Computer system running Windows 11.
+- Minimum 8GB RAM recommended.
+- Sufficient available storage for the virtual machine.
+- 64-bit processor with hardware virtualization support.
+
+### Software Requirements
+
+- Windows 11 (Host Operating System).
+- Oracle VirtualBox.
+- Kali Linux pre-built VirtualBox image (OVA).
+
+## 4. Project Implementation: Step-by-Step Procedure
+
+### Step 1: Download Oracle VirtualBox
+
+I visited the official Oracle VirtualBox website:
+
+https://www.virtualbox.org/
+
+I navigated to the Downloads section and selected the Windows host package.
+
+I downloaded the installation file to my computer.
+
+### Step 2: Install Oracle VirtualBox
+
+After downloading the installer, I located the setup file in my Downloads folder.
+
+I performed the following actions:
+
+1. Double-clicked the VirtualBox installer.
+2. Followed the installation wizard.
+3. Reviewed the installation options.
+4. Accepted the required network interface installation prompts.
+5. Completed the installation.
+6. Launched Oracle VirtualBox to confirm successful installation.
+
+### Step 3: Download the Pre-built Kali Linux Image
+
+I visited the official Kali Linux website:
+
+https://www.kali.org/get-kali/
+
+I selected the Virtual Machines download option.
+
+I downloaded the pre-built Kali Linux image designed for VirtualBox.
+
+The downloaded image was provided in OVA (Open Virtualization Appliance) format.
+
+Unlike the ISO installation method, the pre-built image already contains an installed Kali Linux operating system.
+
+### Step 4: Import the Kali Linux OVA Image
+
+After downloading the image, I opened Oracle VirtualBox.
+
+I performed the following actions:
+
+1. Opened the VirtualBox application.
+2. Selected File from the menu.
+3. Clicked Import Appliance.
+4. Browsed to the location of the downloaded Kali Linux OVA file.
+5. Selected the OVA file.
+6. Reviewed the virtual machine configuration.
+7. Clicked Finish to begin importing the appliance.
+8. Waited for the import process to complete.
+
+After successful import, the Kali Linux virtual machine appeared in the VirtualBox Manager.
+
+### Step 5: Configure Virtual Machine Resources
+
+I selected the imported Kali Linux virtual machine and reviewed its hardware configuration.
+
+The following settings were examined:
+
+**Memory (RAM):** Allocated system memory to the virtual machine.
+
+**Processors:** Reviewed the number of virtual CPU cores assigned to the machine.
+
+**Storage:** Verified the attached virtual hard disk.
+
+**Network:** Reviewed the network adapter configuration to ensure the virtual machine could access the required network resources.
+
+These configurations help ensure that the virtual machine operates efficiently without unnecessarily consuming all the host computer's resources.
+
+### Step 6: Start the Kali Linux Virtual Machine
+
+After reviewing the configuration, I selected the Kali Linux virtual machine and clicked Start.
+
+VirtualBox launched the virtual machine and initiated the Kali Linux boot process.
+
+I waited for the operating system to load successfully.
+
+### Step 7: Log In to Kali Linux
+
+After the operating system booted, the Kali Linux login screen appeared.
+
+I entered the appropriate login credentials provided with the downloaded image.
+
+After successful authentication, the Kali Linux desktop environment became accessible.
+
+### Step 8: Verify the Kali Linux Installation
+
+To confirm that the virtual machine was operating correctly, I opened the terminal and executed several Linux commands.
+
+**A. Check Operating System Information**
+
+```bash
+cat /etc/os-release
+```
+
+Purpose: To display the installed operating system information and Kali Linux distribution details.
+
+**B. Check Kernel Version**
+
+```bash
+uname -r
+```
+
+Purpose: To identify the Linux kernel version currently running.
+
+**C. Check System Architecture**
+
+```bash
+uname -m
+```
+
+Purpose: To identify the system architecture.
+
+**D. Check Network Configuration**
+
+```bash
+ip addr
+```
+
+Purpose: To display the network interfaces and assigned IP addresses.
+
+**E. Check Available Memory**
+
+```bash
+free -h
+```
+
+Purpose: To display the available and used system memory.
+
+The commands helped verify that Kali Linux had booted and that its basic system information was accessible.
+
+## 5. Project Outcome
+
+The project successfully demonstrated the deployment of Kali Linux on Oracle VirtualBox using a pre-built OVA appliance.
+
+The virtual machine was imported, configured and started successfully.
+
+A functional Kali Linux desktop environment was established within the Windows host computer.
+
+## 6. Challenges Encountered
+
+The deployment process may involve challenges such as:
+
+- Large OVA file download size.
+- Insufficient memory allocation.
+- Virtualization settings in the computer BIOS/UEFI.
+- Network adapter configuration.
+- Initial login credential requirements.
+
+Any challenges actually encountered during implementation should be documented here, together with how they were resolved.
+
+## 7. Skills Acquired
+
+Through this practical exercise, I gained experience in:
+
+- Virtualization technology.
+- Oracle VirtualBox installation and management.
+- Kali Linux deployment.
+- Virtual machine resource allocation.
+- Basic Linux system administration.
+- Network interface identification.
+- Technical documentation.
+
+## 8. Conclusion
+
+This project provided practical experience in deploying a cybersecurity-focused Linux operating system within a virtual environment.
+
+By using Oracle VirtualBox and a pre-built Kali Linux OVA image, I successfully established a virtual machine that can serve as a foundation for future cybersecurity practical exercises.
+
+The exercise improved my understanding of virtualization, operating system deployment and basic Linux system configuration.
+
+## 9. Project Evidence
+
+The following screenshots should be included as evidence of the completed project:
+
+1. Oracle VirtualBox successfully installed.
+2. Kali Linux OVA image downloaded.
+3. Kali Linux appliance import process.
+4. Virtual machine hardware configuration.
+5. Kali Linux virtual machine appearing in VirtualBox Manager.
+6. Kali Linux desktop after successful boot.
+7. Terminal showing operating system information.
+8. Terminal showing network configuration.
+
+## 10. References
+
+- Oracle VirtualBox: https://www.virtualbox.org/
+- Kali Linux Official Website: https://www.kali.org/
+- Kali Linux Virtual Machines: https://www.kali.org/get-kali/#kali-virtual-machines
